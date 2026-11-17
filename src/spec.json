@@ -1,0 +1,242 @@
+{
+  "title": "Gestione delle richieste di manutenzione del verde",
+  "description": "Prototipo navigabile per registrare, filtrare e monitorare interventi sul verde pubblico, organizzati per priorità e quartiere. Tutti i dati sono inventati.",
+  "accent": "emerald",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Dashboard",
+      "description": "Panoramica delle richieste e degli interventi sul verde.",
+      "metrics": [
+        {
+          "label": "Richieste aperte",
+          "value": "18"
+        },
+        {
+          "label": "Priorità alta",
+          "value": "4"
+        },
+        {
+          "label": "Interventi completati",
+          "value": "27"
+        },
+        {
+          "label": "Quartieri coinvolti",
+          "value": "6"
+        }
+      ],
+      "columns": [
+        "Indicatore",
+        "Valore",
+        "Nota"
+      ],
+      "rows": [
+        [
+          "Richieste aperte",
+          "18",
+          "Da assegnare o in lavorazione"
+        ],
+        [
+          "Priorità alta",
+          "4",
+          "Richiedono verifica rapida"
+        ],
+        [
+          "Interventi completati",
+          "27",
+          "Nel periodo corrente"
+        ],
+        [
+          "Quartieri coinvolti",
+          "6",
+          "Con almeno una richiesta"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "richieste",
+      "title": "Richieste di manutenzione",
+      "description": "Elenco filtrabile per priorità, quartiere e stato. I filtri sono separati dal modulo di inserimento.",
+      "metrics": [
+        {
+          "label": "Totale richieste",
+          "value": "18"
+        },
+        {
+          "label": "Da assegnare",
+          "value": "5"
+        }
+      ],
+      "columns": [
+        "Codice",
+        "Area verde",
+        "Quartiere",
+        "Intervento richiesto",
+        "Priorità",
+        "Stato",
+        "Data segnalazione"
+      ],
+      "rows": [
+        [
+          "RV-0531",
+          "Giardino delle Lune",
+          "Nubi",
+          "Potatura di alberi",
+          "Alta",
+          "Da assegnare",
+          "2025-04-03"
+        ],
+        [
+          "RV-0532",
+          "Viale dei Salici",
+          "Vela",
+          "Rimozione rami caduti",
+          "Alta",
+          "In verifica",
+          "2025-04-04"
+        ],
+        [
+          "RV-0533",
+          "Parco delle Brume",
+          "Lumo",
+          "Riparazione irrigazione",
+          "Media",
+          "Pianificata",
+          "2025-04-05"
+        ],
+        [
+          "RV-0534",
+          "Orto delle Stelle",
+          "Nubi",
+          "Sfalcio prato",
+          "Bassa",
+          "Completata",
+          "2025-04-06"
+        ],
+        [
+          "RV-0535",
+          "Bosco dei Sogni",
+          "Vela",
+          "Controllo alberature",
+          "Media",
+          "In lavorazione",
+          "2025-04-07"
+        ],
+        [
+          "RV-0536",
+          "Giardino dei Riflessi",
+          "Lumo",
+          "Ripristino aiuole",
+          "Bassa",
+          "Da assegnare",
+          "2025-04-08"
+        ],
+        [
+          "RV-0537",
+          "Parco delle Lanterne",
+          "Nubi",
+          "Pulizia vialetti",
+          "Media",
+          "Pianificata",
+          "2025-04-09"
+        ],
+        [
+          "RV-0538",
+          "Prato dei Gelsi",
+          "Vela",
+          "Potatura siepi",
+          "Bassa",
+          "Completata",
+          "2025-04-10"
+        ]
+      ],
+      "form": [
+        "Codice",
+        "Area verde",
+        "Quartiere",
+        "Intervento richiesto",
+        "Priorità",
+        "Stato",
+        "Data segnalazione"
+      ]
+    },
+    {
+      "id": "interventi",
+      "title": "Pianificazione interventi",
+      "description": "Programma gli interventi verificati e controlla assegnazioni e avanzamento.",
+      "metrics": [
+        {
+          "label": "Pianificati",
+          "value": "7"
+        },
+        {
+          "label": "In lavorazione",
+          "value": "6"
+        },
+        {
+          "label": "Completati",
+          "value": "27"
+        }
+      ],
+      "columns": [
+        "Codice intervento",
+        "Richiesta",
+        "Quartiere",
+        "Squadra",
+        "Data prevista",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "IN-081",
+          "RV-0532",
+          "Vela",
+          "Squadra Lumo",
+          "2025-04-14",
+          "Pianificato"
+        ],
+        [
+          "IN-082",
+          "RV-0533",
+          "Lumo",
+          "Squadra Nubi",
+          "2025-04-15",
+          "Pianificato"
+        ],
+        [
+          "IN-083",
+          "RV-0535",
+          "Vela",
+          "Squadra Vela",
+          "2025-04-12",
+          "In lavorazione"
+        ],
+        [
+          "IN-084",
+          "RV-0537",
+          "Nubi",
+          "Squadra Lumo",
+          "2025-04-16",
+          "Pianificato"
+        ],
+        [
+          "IN-085",
+          "RV-0531",
+          "Nubi",
+          "Squadra Nubi",
+          "2025-04-11",
+          "In verifica"
+        ]
+      ],
+      "form": [
+        "Codice intervento",
+        "Richiesta",
+        "Quartiere",
+        "Squadra",
+        "Data prevista",
+        "Stato"
+      ]
+    }
+  ]
+}
